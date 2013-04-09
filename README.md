@@ -6,17 +6,26 @@
 
 2. Verify your installation and 'play' is in your PATH.  
 	$ play -version
-	
-3. Create an empty directory, then cd to it.  
-	$ cd <your app-directory>
-	
-4. download source (READ-ONLY)
+		
+3. download source (READ-ONLY)
 	$ git clone https://github.com/cyoon2000/play-filepoller.git 
 
-5. Start dev mode (dynamic)
+4. Start dev mode (dynamic)
 	$ play ~run
 
-6. Browse 'File Inventory Status' in browser http://localhost:9000/
+5. Browse 'File Inventory Status' in browser http://localhost:9000/
+
+##  Application specific properties: conf/application.conf ##
+
+Configurable properties are : list of directories to be polled, interval, max # of workers
+<blockquote><p>
+	filepoller.roots="/www/a/data/test/filepoller, /www/a/data/test/filepoller2"  
+	filepoller.interval=2000  
+	filepoller.max_num_workers=5
+</p></blockquote>	
+	
+1. Make sure you point the polling root to existing directory (or create one) before you start the app, otherwise poller won't start.
+2. To test, drop some image file in one or all of the directories and see if shows up in the inventory ( http://localhost:9000/ ) after N (milli)seconds.
 
 
 
