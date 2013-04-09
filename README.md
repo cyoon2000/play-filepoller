@@ -30,6 +30,26 @@ Configurable properties are : list of directories to be polled, interval, max # 
 1. Make sure you point the polling root to existing directory (or create one) before you start the app, otherwise poller won't start.
 2. To test, drop some image file in one or all of the directories and see if shows up in the inventory ( http://localhost:9000/ ) after N (milli)seconds.
 
+## H2 Database Web Console ##
+
+  	1) cd to the app directory, then open play console 
+		$ play  
+	
+  	2) Launch web console in browser 
+		$ h2-browser
+	
+	3) Run file poller application. Run Evolution script if in-memory. 
+		$ run 
+	
+	4) In web console Enter JDBC URL, User Name/Password as you specified in applciation.conf
+		In-memory JDBC URL : 'jdbc:h2:mem:<db-name>'  or 'jdbc:h2:tcp://localhost/mem:<db-name>' (if web console is launched from separate console as app)
+  		File-base JDBC URL : 'jdbc:h2:file:/data/<db-name>'
+  		
+    	5) Test the connection and connect, then you should be able to see the table and data.
+
+	H2 Reference : http://www.andyroot.com/2012/11/open-play-frameworks-h2-console.html
+
+
 ## IDEs ##
 	Intellij IDEA community edition or Eclipse
 	
