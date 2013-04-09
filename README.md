@@ -18,11 +18,14 @@
 ##  Application specific properties: conf/application.conf ##
 
 Configurable properties are : list of directories to be polled, interval, max # of workers
-<blockquote><p>
-	filepoller.roots="/www/a/data/test/filepoller, /www/a/data/test/filepoller2"  
-	filepoller.interval=2000  
-	filepoller.max_num_workers=5
-</p></blockquote>	
+
+
+	filepoller.roots="/www/a/data/test/filepoller, /www/a/data/test/filepoller2"    
+	
+	filepoller.interval=2000    
+
+	filepoller.max_num_workers=5   
+	
 	
 1. Make sure you point the polling root to existing directory (or create one) before you start the app, otherwise poller won't start.
 2. To test, drop some image file in one or all of the directories and see if shows up in the inventory ( http://localhost:9000/ ) after N (milli)seconds.
