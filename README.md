@@ -1,19 +1,19 @@
 # File Poller using Play 2.0 and Anorm DB  #
 
 ## Install play 2.0.4 and run file poller app ##
-1. Install play 2.0.4 (get the app working first, then later on, you can look into migrating to 2.1)
-  http://www.playframework.com/download
+	1. Install play 2.0.4 (get the app working first, then later on, you can look into migrating to 2.1)
+  		http://www.playframework.com/download
 
-2. Verify your installation and 'play' is in your PATH.  
-	$ play -version
+	2. Verify your installation and 'play' is in your PATH.  
+		$ play -version
 		
-3. download source (READ-ONLY)
-	$ git clone https://github.com/cyoon2000/play-filepoller.git 
+	3. download source (READ-ONLY)
+		$ git clone https://github.com/cyoon2000/play-filepoller.git 
 
-4. Start dev mode (dynamic)
-	$ play ~run
+	4. Start dev mode (dynamic)
+		$ play ~run
 
-5. Browse 'File Inventory Status' in browser http://localhost:9000/
+	5. Browse 'File Inventory Status' in browser http://localhost:9000/
 
 ##  Application specific properties: conf/application.conf ##
 
@@ -42,9 +42,9 @@ Configurable properties are : list of directories to be polled, interval, max # 
 		
 
 ## Git - one time setup ##
-* If creating your own repo:
-	(Create a new repository on the command line)
 
+	* If creating your own repo:
+	(Create a new repository on the command line)
 
 	$ touch README.md
 	
@@ -59,13 +59,13 @@ Configurable properties are : list of directories to be polled, interval, max # 
 	$ git push -u origin master
 
 
-* If pushing to existing repo:
+	* If pushing to existing repo:
 	( Push an existing repository from the command line)
-
 
 	$ git remote add origin https://github.com/<existing repo name>
 	
 	$ git push -u origin master
+
 
 ## Git - daily basis commands ##
 
