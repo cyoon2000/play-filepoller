@@ -30,5 +30,61 @@ Configurable properties are : list of directories to be polled, interval, max # 
 1. Make sure you point the polling root to existing directory (or create one) before you start the app, otherwise poller won't start.
 2. To test, drop some image file in one or all of the directories and see if shows up in the inventory ( http://localhost:9000/ ) after N (milli)seconds.
 
+## IDEs ##
+	Intellij IDEA community edition or Eclipse
+	
+	1. Intellij IDEA community edition (free)
+		1) play new your-project-name
+		2) open IDEA, create new project, give same name as project-name.
+	
+	2. Eclipse : I have not tried but here is reference
+	http://stackoverflow.com/questions/10038673/using-eclipse-with-play-framework-2-0
+		
+
+## Git - one time setup ##
+* If creating your own repo:
+	(Create a new repository on the command line)
+
+
+	$ touch README.md
+	
+	$ git init
+	
+	$ git add README.md
+	
+	$ git commit -m "first commit"
+	
+	$ git remote add origin https://github.com/<your repo name>
+	
+	$ git push -u origin master
+
+
+* If pushing to existing repo:
+	( Push an existing repository from the command line)
+
+
+	$ git remote add origin https://github.com/<existing repo name>
+	
+	$ git push -u origin master
+
+## Git - daily basis commands ##
+
+	$ git pull
+	
+	... then modify files ...
+
+	$ git add <directory or filename>  (or git rm <filename>)
+	
+	$ git status
+
+	$ git commit -m "init checkin for source"
+
+	$ git push -u origin master
+
+
+## Future reference - Possible Migration to Maven ##
+
+	(how to setup a Maven Scala project)
+	http://theyougen.blogspot.com/2010/01/how-to-setup-maven-scala-project-with.html
 
 
